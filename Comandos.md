@@ -1,8 +1,10 @@
-# Comando ls
+# Comandos Para Iniciantes Linux
+
+## Comando ls
 
 Provavelmente o primeiro comando utilizado quando se tem contato com o Linux, permite que você liste o conteúdo do diretório que você quer (o que você estiver no momento).
 
-# Comando cd
+## Comando cd
 
 Assim como o comando ls, o comando cd deve ser um dos mais utilizados e o segundo comando que usuários Linux aprendem.
 
@@ -10,7 +12,7 @@ Ele se refere a “change directory” e, traduzido "mudar diretório" , muda vo
 
 Exemplo: cd Documentos
 
-# Comando alias
+## Comando alias
 
 O comando alias permite que você defina alias temporários em sua sessão shell.
 
