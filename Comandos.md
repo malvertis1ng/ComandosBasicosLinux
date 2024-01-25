@@ -492,7 +492,7 @@ update sincroniza os arquivos de pacote de suas fontes.
 upgrade instala a versão mais recente de todos os pacotes instalados.
 check atualiza o cache de pacotes e verifica dependências quebradas.
 
-## comandos nano, vi e jed
+## Comandos nano, vi e jed
 O Linux permite que os usuários editem e gerenciem arquivos por meio de um editor de texto usando comandos como o nano, o vi ou o jed. O nano e o vi são nativos do sistema operacional, enquanto o jed precisa ser instalado.
 
 O comando nano denota palavras-chave e pode funcionar com a maioria dos idiomas. Para usá-lo, digite o seguinte comando:
