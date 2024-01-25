@@ -249,7 +249,8 @@ O comando tar aceita muitas opções, como:
 -x extrai um arquivo.
 -t lista o conteúdo de um arquivo.
 -u arquiva e adiciona a um arquivo existente.
-21. Comando chmod
+
+## Comando chmod
 O chmod é um comando que modifica as permissões de leitura, gravação e execução de um arquivo ou diretório. No Linux, cada arquivo está associado a três classes de usuários: proprietário, membro do grupo e outros.
 
 Aqui está a sintaxe básica:
@@ -339,10 +340,11 @@ Essas são algumas das opções que você pode usar:
 -a exibe todas as informações do sistema.
 -s exibe o nome do kernel.
 -n exibe o hostname do node do sistema.
-28. Comando top
+
+## Comando top
 Equivalente ao gerenciador de tarefas do Windows, o comando top vai mostrar uma lista de processos que estão em execução e o quanto de CPU cada processo usa. Ele é muito útil para monitorar o uso dos recursos do sistema, especialmente para saber qual processo deve ser encerrado por consumir muitos recursos. Basta digitar top na CLI para executá-lo.
 
-29. Comando history
+## Comando history
 Com o history, o sistema listará até 500 comandos executados anteriormente, permitindo que você os reutilize sem precisar digitá-los novamente. Lembre-se de que somente os usuários com privilégios sudo podem executar esse comando. A forma de execução desse comando também depende do shell do Linux que você usa.
 
 Para executá-lo, digite o comando abaixo:
@@ -384,7 +386,7 @@ Por exemplo, você deseja ver a seção 2 do manual do comando ls:
 
 man 2 ls
 
-31. Comando echo
+## Comando echo
 O comando echo é um utilitário nativo que exibe uma linha de texto ou cadeia de caracteres (string) usando a saída padrão. Veja a seguir a sintaxe básica:
 
 echo [opção] [string]
@@ -401,7 +403,8 @@ Esse comando oferece suporte a várias opções, como:
 \b remove os espaços entre um texto.
 \c não produz mais nenhum resultado.
 -E exibe a opção padrão e desativa a interpretação dos escapes de barra invertida.
-32. Comandos zip e unzip
+
+## Comandos zip e unzip
 Use o comando zip para compactar seus arquivos em um arquivo ZIP, um formato universal comumente usado no Linux. Ele pode escolher automaticamente a melhor taxa de compactação. 
 
 O comando zip também é útil para arquivar arquivos e diretórios e reduzir o uso do disco.
@@ -422,7 +425,7 @@ Portanto, para descompactar um arquivo chamado archive.zip no diretório atual, 
 
 unzip archive.zip
 
-33. Comando hostname
+## Comando hostname
 Execute o comando hostname para saber o nome do host do sistema. Você pode executá-lo com ou sem uma opção. Aqui está a sintaxe geral:
 
 hostname [opção]
@@ -436,7 +439,7 @@ Por exemplo, digite o seguinte comando para saber o endereço IP de seu computad
 
 hostname -i
 
-34. Comandos useradd e userdel
+## Comandos useradd e userdel
 O Linux é um sistema multiusuário, o que significa que mais de uma pessoa pode usá-lo simultaneamente. useradd é usado para criar uma nova conta, enquanto o comando passwd permite adicionar uma senha. Somente aqueles com privilégios de root ou sudo podem executar o comando useradd. 
 
 Quando você usa o comando useradd, ele realiza algumas alterações importantes:
@@ -462,7 +465,7 @@ Para excluir uma conta de usuário, use o comando userdel:
 
 userdel nome_de_usuário
 
-35. Comando apt-get
+## Comando apt-get
 O apt-get é uma ferramenta de linha de comando para lidar com as bibliotecas da Advanced Package Tool (APT) no Linux. Ele permite que você obtenha informações e pacotes de fontes autenticadas para gerenciar, atualizar, remover e instalar softwares e suas dependências.
 
 A execução do comando apt-get exige que você tenha privilégios sudo ou root.
@@ -476,7 +479,8 @@ Esses são os comandos mais comuns que você pode adicionar ao apt-get:
 update sincroniza os arquivos de pacote de suas fontes.
 upgrade instala a versão mais recente de todos os pacotes instalados.
 check atualiza o cache de pacotes e verifica dependências quebradas.
-36. comandos nano, vi e jed
+
+## comandos nano, vi e jed
 O Linux permite que os usuários editem e gerenciem arquivos por meio de um editor de texto usando comandos como o nano, o vi ou o jed. O nano e o vi são nativos do sistema operacional, enquanto o jed precisa ser instalado.
 
 O comando nano denota palavras-chave e pode funcionar com a maioria dos idiomas. Para usá-lo, digite o seguinte comando:
@@ -493,7 +497,7 @@ O jed tem uma interface de menu suspenso que permite aos usuários executar aç�
 
 Para abrir o programa, basta digitar jed na linha de comando.
 
-37. Comandos alias e unalias
+## Comandos alias e unalias
 O alias permite que você crie um atalho com a mesma funcionalidade de um comando, nome de arquivo ou texto. Quando executado, ele instrui o shell a substituir uma string por outra.
 
 Para usar o comando alias, digite a seguinte sintaxe:
@@ -510,7 +514,7 @@ Veja a seguir como é a sintaxe geral:
 
 unalias [nome_do_alias]
 
-38. Comando su
+## Comando su
 O comando switch user, ou su, permite executar um programa como um usuário diferente. Ele altera a conta administrativa na sessão de login atual. Esse comando é especialmente útil para acessar o sistema por meio de SSH ou usar o gerenciador de exibição da GUI quando o usuário raiz não está disponível.
 
 Esta é a sintaxe geral do comando:
@@ -524,7 +528,8 @@ Aqui estão algumas que você pode usar:
 -p ou –preserve-environment mantém o mesmo ambiente de shell, composto por HOME, SHELL, USER e LOGNAME.
 -s ou –shell permite especificar um ambiente de shell diferente para execução.
 -l ou –login executa um script de login para mudar para um nome de usuário diferente. Para executá-lo, é necessário digitar a senha do usuário.
-39. Comando htop
+
+## Comando htop
 O comando htop é um programa interativo que monitora os recursos do sistema e os processos do servidor em tempo real. Ele está disponível na maioria das distribuições Linux e você pode instalá-lo usando o gerenciador de pacotes padrão.
 
 Em comparação com o comando top, o htop tem muitos aprimoramentos e recursos adicionais, como a operação com o mouse e indicadores visuais.
@@ -538,7 +543,8 @@ Você também pode adicionar opções, como:
 -d ou –delay mostra o atraso entre as atualizações em décimos de segundos.
 -C ou –no-color ativa o modo monocromático.
 -h ou –help exibe a mensagem de ajuda e sai.
-40. Comando ps
+
+## Comando ps
 O status do processo, ou comando ps, produz um snapshot de todos os processos em execução em seu sistema. Os resultados estáticos são obtidos dos arquivos virtuais no sistema de arquivos /proc.
 
 A execução do comando ps sem uma opção ou argumento listará os processos em execução no shell, juntamente com:
