@@ -65,6 +65,7 @@ Você também pode usar o comando mv para renomear um arquivo:
 mv nomedoarquivo_antigo.txt nome_novo.txt
 
 ## Comando mkdir
+
 Use o comando mkdir para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles. O usuário que executa esse comando deve ter o privilégio de criar uma nova pasta no diretório principal, caso contrário, poderá receber um erro de permissão negada.
 
 Aqui está a sintaxe básica:
@@ -86,6 +87,7 @@ O comando mkdir aceita muitas opções, como:
 -v imprime uma mensagem para cada diretório criado.
 
 ## Comando rmdir
+
 Para excluir permanentemente um diretório vazio, use o comando rmdir. Lembre-se de que o usuário que executa esse comando deve ter privilégios sudo no diretório pai.
 
 Por exemplo, você deseja remover um subdiretório vazio chamado personal1 e sua pasta principal mydir:
@@ -145,6 +147,7 @@ grep blue notepad.txt
 A saída do comando exibirá as linhas que contêm a palavra blue.
 
 ## Comando sudo
+
 Correspondente a SuperUser Do, sudo é um dos comandos básicos mais populares do Linux. Ele permite executar tarefas que exigem permissões administrativas ou de root.
 
 Ao usar o sudo, o sistema solicitará que os usuários se autentiquem com uma senha. Em seguida, o sistema Linux registrará um registro de data e hora como um rastreador. Por padrão, todo usuário root pode executar comandos sudo por 15 minutos/sessão.
@@ -160,7 +163,9 @@ Você também pode adicionar uma opção, por exemplo:
 -k ou –reset-timestamp invalida o arquivo de registro de data e hora.
 -g ou –group=group executa comandos como um nome ou ID de grupo especificado.
 -h ou –host=host executa comandos no host.
-15. Comando df
+
+## Comando df
+
 Use o comando df para obter informações sobre o uso do espaço em disco do sistema, mostrado em porcentagem e quilobyte (KB). Esta é a sintaxe geral:
 
 df [opções] [arquivo]
@@ -174,7 +179,9 @@ Essas são algumas opções que você pode usar:
 O df -m exibe informações sobre o uso do sistema de arquivos em MBs.
 df -k exibe o uso do sistema de arquivos em KBs.
 df -T mostra o tipo de sistema de arquivos em uma nova coluna.
-16. Comando du
+
+## Comando du
+
 Se você quiser verificar quanto de espaço um arquivo ou diretório ocupa, use o comando du. Você pode executar esse comando para identificar qual parte do sistema usa excessivamente o armazenamento do seu sistema.
 
 Lembre-se de que você deve especificar o caminho do diretório ao usar o comando du. Por exemplo, para verificar /home/user/Documents, digite:
@@ -187,7 +194,9 @@ Adicionar um sinalizador ao comando du modificará a operação, por exemplo:
 -m fornece informações sobre pastas e arquivos em MB 
 k exibe informações em KB.
 -h informa a data da última modificação das pastas e arquivos exibidos.
-17. Comando head
+
+## Comando head
+
 O comando head permite que você visualize as primeiras dez linhas de um texto. A adição de uma opção permite que você altere o número de linhas mostradas. O comando head também é usado para enviar dados canalizados para a CLI.
 
 Aqui está a sintaxe geral:
@@ -216,6 +225,7 @@ Por exemplo, você deseja mostrar as últimas dez linhas do arquivo colors.txt:
 tail -n colors.txt
 
 ## Comando diff
+
 O comando diff (diferença) compara o conteúdo de dois arquivos linha por linha. Depois de analisar esses arquivos, ele vai mostrar as linhas que não são comuns entre eles.
 
 Os programadores frequentemente usam este comando quando precisam fazer pequenas alterações em programas. Assim, eles não precisam reescrever o código inteiro.
@@ -233,7 +243,9 @@ Aqui estão algumas opções para adicionar:
 -q mostra apenas se os arquivos são diferentes ou não, sem especificar as diferenças.
 -i torna o comando diff insensível a maiúsculas e minúsculas.
 -b ignora espaços em branco como possíveis diferenças.
-20. Comando tar
+
+## Comando tar
+
 O comando tar reúne vários arquivos em um arquivo TAR — um formato do Linux semelhante ao ZIP, com compactação opcional.
 
 Aqui está a sintaxe básica:
@@ -251,6 +263,7 @@ O comando tar aceita muitas opções, como:
 -u arquiva e adiciona a um arquivo existente.
 
 ## Comando chmod
+
 O chmod é um comando que modifica as permissões de leitura, gravação e execução de um arquivo ou diretório. No Linux, cada arquivo está associado a três classes de usuários: proprietário, membro do grupo e outros.
 
 Aqui está a sintaxe básica:
@@ -268,7 +281,9 @@ O comando chmod oferece suporte a várias opções, incluindo:
 -v ou –verbose exibe um diagnóstico para cada arquivo processado.
 
 ## Comando chown
-No Linux, todos os arquivos são de propriedade de um usuário específico. O comando chown permite alterar a propriedade de um arquivo, diretório ou link simbólico para um nome de usuário específico. 
+
+No Linux, todos os arquivos são de propriedade de um usuário específico. O comando chown permite alterar a propriedade de 
+um arquivo, diretório ou link simbólico para um nome de usuário específico. 
 
 Este é o formato básico:
 
@@ -279,6 +294,7 @@ Por exemplo, você deseja tornar o linuxuser2 o proprietário do arquivo filenam
 chown linuxuser2 filename.txt
 
 ## Comando jobs
+
 Um job é um processo que iniciado pelo shell. O comando jobs exibirá todos os processos em execução juntamente com seus status. Lembre-se de que esse comando só está disponível nos shells csh, bash, tcsh e ksh.
 
 Essa é a sintaxe básica:
@@ -294,6 +310,7 @@ Aqui estão algumas opções que você pode usar:
 -p lista somente IDs de processos.
 
 ## Comando kill
+
 Se você tem um programa que não está respondendo bem, você pode finalizá-lo manualmente pelo comando kill. Ele vai mandar um certo sinal ao aplicativo com mau funcionamento e instruir que ele seja encerrado sozinho logo na sequência.
 
 Existe um total de 64 avisos que você pode usar, mas, geralmente, as pessoas usam apenas 2 deles:
@@ -307,6 +324,7 @@ Depois de saber qual aviso você quer usar e o PID do programa, use a sintaxe ab
 kill [signal option] PID.
 
 ## Comando ping
+
 O comando ping é um dos comandos básicos do Linux mais usados para verificar se uma rede ou um servidor está acessível. Além disso, ele é usado para solucionar vários problemas de conectividade.
 
 Este é o formato geral:
@@ -318,6 +336,7 @@ Por exemplo, você quer saber se pode se conectar ao Google e medir seu tempo de
 ping google.com
 
 ## Comando wget
+
 A linha de comando do Linux permite que você baixe arquivos da Internet usando o comando wget. Ele funciona em segundo plano, sem atrapalhar outros processos em execução.
 
 O comando wget baixa arquivos usando os protocolos HTTP, HTTPS e FTP. Ele pode executar downloads recursivos, que transferem partes de sites seguindo estruturas de diretórios e links, criando versões locais de páginas da web.
@@ -331,6 +350,7 @@ Por exemplo, digite o seguinte comando para baixar a versão mais recente do Wor
 wget https://wordpress.org/latest.zip
 
 ## Comando uname
+
 O comando uname, que significa Unix Name, vai mostrar informações detalhadas sobre seu sistema Linux. Isso inclui o nome da máquina, do sistema operacional, do kernel e assim por diante.
 
 uname [opção]
@@ -342,9 +362,11 @@ Essas são algumas das opções que você pode usar:
 -n exibe o hostname do node do sistema.
 
 ## Comando top
+
 Equivalente ao gerenciador de tarefas do Windows, o comando top vai mostrar uma lista de processos que estão em execução e o quanto de CPU cada processo usa. Ele é muito útil para monitorar o uso dos recursos do sistema, especialmente para saber qual processo deve ser encerrado por consumir muitos recursos. Basta digitar top na CLI para executá-lo.
 
 ## Comando history
+
 Com o history, o sistema listará até 500 comandos executados anteriormente, permitindo que você os reutilize sem precisar digitá-los novamente. Lembre-se de que somente os usuários com privilégios sudo podem executar esse comando. A forma de execução desse comando também depende do shell do Linux que você usa.
 
 Para executá-lo, digite o comando abaixo:
@@ -356,7 +378,9 @@ Esse comando oferece suporte a várias opções, como:
 -c limpa a lista completa do histórico.
 -d offset exclui o registro do histórico na posição OFFSET.
 -a acrescenta linhas de histórico.
-30. Comando man
+
+## Comando man
+
 O comando man fornece um manual completo para todos comandos ou utilitários que podem ser executados no Terminal, incluindo o nome, a descrição e as opções.
 
 Ele consiste em nove seções:
