@@ -2,7 +2,9 @@
 
 ## Comando ls
 
-Provavelmente o primeiro comando utilizado quando se tem contato com o Linux, permite que você liste o conteúdo do diretório que você quer (o que você estiver no momento).
+Provavelmente o primeiro comando utilizado quando se tem contato com o Linux. O comando cd é usado para trocar de um diretório para
+outro, ou seja, serve para voce conseguir entrar em uma pasta, basta digitar cd NomeDaPasta ou cd Endereço da Pasta. Vale reforçar que
+só é possível entrar em um diretório caso o comando digitado combinado com o atual diretório de extamente no diretório desejado.
 
 ## Comando cd
 
@@ -33,7 +35,8 @@ Para copiar arquivos para um diretório, digite os nomes dos arquivos seguidos d
 
 cp nomedoarquivo1.txt nomedoarquivo2.txt nomedoarquivo3.txt /home/username/Documents
 
-Para copiar o conteúdo de um arquivo para um novo arquivo no mesmo diretório, digite cp seguido do arquivo de origem e do arquivo de destino:
+Para copiar o conteúdo de um arquivo para um novo arquivo no mesmo diretório, digite cp seguido do arquivo de origem e do arquivo de
+destino:
 
 cp nomedoarquivo1.txt nomedoarquivo2.txt
 
@@ -44,7 +47,8 @@ cp -R /home/username/Documents /home/username/Documents_backup
 ## Comando mv
 O uso mais comum do comando mv é mover arquivos, mas ele também pode ser usado para renomear arquivos.
 
-Basta digitar mv seguido do nome do arquivo e do diretório de destino. Por exemplo, você deseja mover o arquivo nomedoarquivo.txt para o diretório /home/username/Documents:
+Basta digitar mv seguido do nome do arquivo e do diretório de destino. Por exemplo, você deseja mover o arquivo nomedoarquivo.txt para o
+diretório /home/username/Documents:
 
 mv nomedoarquivo.txt /home/username/Documents.
 
@@ -54,7 +58,8 @@ mv nomedoarquivo_antigo.txt nome_novo.txt
 
 ## Comando mkdir
 
-Use o comando mkdir para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles. O usuário que executa esse comando deve ter o privilégio de criar uma nova pasta no diretório principal, caso contrário, poderá receber um erro de permissão negada.
+Use o comando mkdir para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles. O usuário que executa esse
+comando deve ter o privilégio de criar uma nova pasta no diretório principal, caso contrário, poderá receber um erro de permissão negada.
 
 Aqui está a sintaxe básica:
 
@@ -71,7 +76,8 @@ mkdir Music/Songs
 O comando mkdir aceita muitas opções, como:
 
 -p ou –parents cria um diretório entre duas pastas existentes. Por exemplo, mkdir -p Music/2020/Songs criará o novo diretório “2020”.
--m define as permissões do arquivo. Por exemplo, para criar um diretório com permissões completas de leitura, gravação e execução para todos os usuários, digite mkdir -m777 nome_do_diretório.
+-m define as permissões do arquivo. Por exemplo, para criar um diretório com permissões completas de leitura, gravação e execução para
+todos os usuários, digite mkdir -m777 nome_do_diretório.
 -v imprime uma mensagem para cada diretório criado.
 
 ## Comando rmdir
