@@ -24,3 +24,12 @@ alias ls="ls --color=auto"
 
 Como o nome sugere, o comando unalias visa remover um alias dos pseudônimos já definidos
 
+## Comando cat
+
+O comando cat (abreviação para concatenar) é um dos comandos Linux mais usados. Ele é usado para visualizar, criar e relacionar arquivos. Para executar esse comando, digite cat seguido pelo nome do arquivo e sua extensão. Por exemplo: cat nomedoarquivo.txt.
+
+Aqui estão outras maneiras de usar o comando cat:
+
+cat > nomedoarquivo.txt cria um novo arquivo
+cat nomedoarquivo1.txt nomedoarquivo2.txt > nomedoarquivo3.txt junta dois arquivos (1 e 2) em um novo (3).
+tac nomedoarquivo.txt exibe o conteúdo do arquivo em ordem rever
