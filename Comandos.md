@@ -2,9 +2,7 @@
 
 ## Comando ls
 
-Provavelmente o primeiro comando utilizado quando se tem contato com o Linux. O comando cd é usado para trocar de um diretório para
-outro, ou seja, serve para voce conseguir entrar em uma pasta, basta digitar cd NomeDaPasta ou cd Endereço da Pasta. Vale reforçar que
-só é possível entrar em um diretório caso o comando digitado combinado com o atual diretório de extamente no diretório desejado.
+Provavelmente o primeiro comando utilizado quando se tem contato com o Linux. O comando ls lista arquivos e diretórios e seus metadados associados, como tamanho do arquivo, propriedade e tempo de modificação. Sem opções, ls lista os arquivos contidos no diretório atual , classificando-os em ordem alfabética.
 
 ## Comando cd
 
@@ -13,6 +11,7 @@ Assim como o comando ls, o comando cd deve ser um dos mais utilizados e o segund
 Ele se refere a “change directory” e, traduzido "mudar diretório" , muda você para o diretório que você está tentando acessar.
 
 Exemplo: cd Documentos
+
 
 ## Comando cat
 
