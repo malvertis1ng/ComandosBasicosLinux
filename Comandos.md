@@ -115,6 +115,7 @@ Por exemplo, digite o seguinte comando para criar um arquivo HTML chamado Web no
 touch /home/username/Documents/Web.html
 
 ## Comando locate
+
 Você pode o comando locate para localizar um arquivo, assim como você faz para procurar um arquivo no Windows. Além disso, usando o argumento -i junto com esse comando faz com que ele se torne insensível a maiúsculas ou minúsculas, permitindo que você pesquise por um arquivo mesmo sem saber exatamente o nome dele.
 
 Para procurar um arquivo que contém duas ou mais palavras, use um asterisco (*). Por exemplo, use o comando locate -i school*note para encontrar qualquer arquivo que tenha as palavras “school” e “note”, não importando se existem letras maiúsculas ou minúsculas.
@@ -238,7 +239,7 @@ Aqui estão algumas opções para adicionar:
 -i torna o comando diff insensível a maiúsculas e minúsculas.
 -b ignora espaços em branco como possíveis diferenças.
 
-## Comando tar
+## Comando tar  
 
 O comando tar reúne vários arquivos em um arquivo TAR — um formato do Linux semelhante ao ZIP, com compactação opcional.
 
@@ -458,6 +459,7 @@ Por exemplo, digite o seguinte comando para saber o endereço IP de seu computad
 hostname -i
 
 ## Comandos useradd e userdel
+
 O Linux é um sistema multiusuário, o que significa que mais de uma pessoa pode usá-lo simultaneamente. useradd é usado para criar uma nova conta, enquanto o comando passwd permite adicionar uma senha. Somente aqueles com privilégios de root ou sudo podem executar o comando useradd. 
 
 Quando você usa o comando useradd, ele realiza algumas alterações importantes:
@@ -484,6 +486,7 @@ Para excluir uma conta de usuário, use o comando userdel:
 userdel nome_de_usuário
 
 ## Comando apt-get
+
 O apt-get é uma ferramenta de linha de comando para lidar com as bibliotecas da Advanced Package Tool (APT) no Linux. Ele permite que você obtenha informações e pacotes de fontes autenticadas para gerenciar, atualizar, remover e instalar softwares e suas dependências.
 
 A execução do comando apt-get exige que você tenha privilégios sudo ou root.
@@ -499,6 +502,7 @@ upgrade instala a versão mais recente de todos os pacotes instalados.
 check atualiza o cache de pacotes e verifica dependências quebradas.
 
 ## Comandos nano, vi e jed
+
 O Linux permite que os usuários editem e gerenciem arquivos por meio de um editor de texto usando comandos como o nano, o vi ou o jed. O nano e o vi são nativos do sistema operacional, enquanto o jed precisa ser instalado.
 
 O comando nano denota palavras-chave e pode funcionar com a maioria dos idiomas. Para usá-lo, digite o seguinte comando:
@@ -516,6 +520,7 @@ O jed tem uma interface de menu suspenso que permite aos usuários executar aç�
 Para abrir o programa, basta digitar jed na linha de comando.
 
 ## Comandos alias e unalias
+
 O alias permite que você crie um atalho com a mesma funcionalidade de um comando, nome de arquivo ou texto. Quando executado, ele instrui o shell a substituir uma string por outra.
 
 Para usar o comando alias, digite a seguinte sintaxe:
@@ -533,6 +538,7 @@ Veja a seguir como é a sintaxe geral:
 unalias [nome_do_alias]
 
 ## Comando su
+
 O comando switch user, ou su, permite executar um programa como um usuário diferente. Ele altera a conta administrativa na sessão de login atual. Esse comando é especialmente útil para acessar o sistema por meio de SSH ou usar o gerenciador de exibição da GUI quando o usuário raiz não está disponível.
 
 Esta é a sintaxe geral do comando:
@@ -548,6 +554,7 @@ Aqui estão algumas que você pode usar:
 -l ou –login executa um script de login para mudar para um nome de usuário diferente. Para executá-lo, é necessário digitar a senha do usuário.
 
 ## Comando htop
+
 O comando htop é um programa interativo que monitora os recursos do sistema e os processos do servidor em tempo real. Ele está disponível na maioria das distribuições Linux e você pode instalá-lo usando o gerenciador de pacotes padrão.
 
 Em comparação com o comando top, o htop tem muitos aprimoramentos e recursos adicionais, como a operação com o mouse e indicadores visuais.
@@ -563,6 +570,7 @@ Você também pode adicionar opções, como:
 -h ou –help exibe a mensagem de ajuda e sai.
 
 ## Comando ps
+
 O status do processo, ou comando ps, produz um snapshot de todos os processos em execução em seu sistema. Os resultados estáticos são obtidos dos arquivos virtuais no sistema de arquivos /proc.
 
 A execução do comando ps sem uma opção ou argumento listará os processos em execução no shell, juntamente com:
