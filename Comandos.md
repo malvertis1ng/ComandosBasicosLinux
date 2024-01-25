@@ -12,18 +12,6 @@ Ele se refere a “change directory” e, traduzido "mudar diretório" , muda vo
 
 Exemplo: cd Documentos
 
-## Comando alias
-
-O comando alias permite que você defina alias temporários em sua sessão shell.
-
-Por exemplo, para definir ls para ter cor sem digitar a flag --color sempre, você usaria:
-
-alias ls="ls --color=auto"
-
-## Comando unalias
-
-Como o nome sugere, o comando unalias visa remover um alias dos pseudônimos já definidos
-
 ## Comando cat
 
 O comando cat (abreviação para concatenar) é um dos comandos Linux mais usados. Ele é usado para visualizar, criar e relacionar arquivos. Para executar esse comando, digite cat seguido pelo nome do arquivo e sua extensão. Por exemplo: cat nomedoarquivo.txt.
