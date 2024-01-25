@@ -53,7 +53,7 @@ Para copiar um diretório inteiro, passe o sinalizador -R antes de digitar o dir
 
 cp -R /home/username/Documents /home/username/Documents_backup
 
-6. Comando mv
+## Comando mv
 O uso mais comum do comando mv é mover arquivos, mas ele também pode ser usado para renomear arquivos.
 
 Basta digitar mv seguido do nome do arquivo e do diretório de destino. Por exemplo, você deseja mover o arquivo nomedoarquivo.txt para o diretório /home/username/Documents:
@@ -64,7 +64,7 @@ Você também pode usar o comando mv para renomear um arquivo:
 
 mv nomedoarquivo_antigo.txt nome_novo.txt
 
-7. Comando mkdir
+## Comando mkdir
 Use o comando mkdir para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles. O usuário que executa esse comando deve ter o privilégio de criar uma nova pasta no diretório principal, caso contrário, poderá receber um erro de permissão negada.
 
 Aqui está a sintaxe básica:
@@ -84,14 +84,15 @@ O comando mkdir aceita muitas opções, como:
 -p ou –parents cria um diretório entre duas pastas existentes. Por exemplo, mkdir -p Music/2020/Songs criará o novo diretório “2020”.
 -m define as permissões do arquivo. Por exemplo, para criar um diretório com permissões completas de leitura, gravação e execução para todos os usuários, digite mkdir -m777 nome_do_diretório.
 -v imprime uma mensagem para cada diretório criado.
-8. Comando rmdir
+
+## Comando rmdir
 Para excluir permanentemente um diretório vazio, use o comando rmdir. Lembre-se de que o usuário que executa esse comando deve ter privilégios sudo no diretório pai.
 
 Por exemplo, você deseja remover um subdiretório vazio chamado personal1 e sua pasta principal mydir:
 
 rmdir -p mydir/personal1
 
-9. Comando rm
+## Comando rm
 O comando rm é usado para excluir arquivos em um diretório. Certifique-se de que o usuário que executa esse comando tenha permissões de gravação.
 
 Lembre-se do local do diretório, pois isso apagará o(s) arquivo(s) permanentemente e não há como desfazer a ação.
@@ -109,19 +110,20 @@ Aqui estão algumas opções que você pode adicionar:
 -i solicita a confirmação do sistema antes de excluir um arquivo.
 -f permite que o sistema faça a remoção sem confirmação.
 -r exclui arquivos e diretórios recursivamente.
-10. Comando touch
+
+## Comando touch
 O comando touch permite criar um arquivo vazio ou gerar e modificar um registro de data e hora na linha de comando do Linux.
 
 Por exemplo, digite o seguinte comando para criar um arquivo HTML chamado Web no diretório Documents:
 
 touch /home/username/Documents/Web.html
 
-11. Comando locate
+## Comando locate
 Você pode o comando locate para localizar um arquivo, assim como você faz para procurar um arquivo no Windows. Além disso, usando o argumento -i junto com esse comando faz com que ele se torne insensível a maiúsculas ou minúsculas, permitindo que você pesquise por um arquivo mesmo sem saber exatamente o nome dele.
 
 Para procurar um arquivo que contém duas ou mais palavras, use um asterisco (*). Por exemplo, use o comando locate -i school*note para encontrar qualquer arquivo que tenha as palavras “school” e “note”, não importando se existem letras maiúsculas ou minúsculas.
 
-12. Comando find
+## Comando find
 Similar ao comando locate, o comando find ajuda você a procurar por arquivos. A diferença é que você usa o find para localizar arquivos dentro de um diretório específico.
 
 Como exemplo, digite find /home/ -name notes.txt para procurar por um arquivo chamado notes.txt dentro do diretório home e seus subdiretórios.
@@ -130,7 +132,8 @@ Outras variações na hora de usar o find são:
 
 find -name nomedoarquivo.txt para localizar arquivos no diretório atual.
 find ./ -type d -name nomedodiretorio para procurar diretórios.
-13. Comando grep
+
+## Comando grep
 Outro comando básico do Linux que merece ser citado é o grep. Ele permite que você encontre uma palavra pesquisando todo o conteúdo de um arquivo específico.
 
 Quando o comando grep encontra uma correspondência, ele imprime todas as linhas que contêm o padrão específico. Esse comando ajuda a filtrar arquivos de registro grandes.
@@ -141,7 +144,7 @@ grep blue notepad.txt
 
 A saída do comando exibirá as linhas que contêm a palavra blue.
 
-14. Comando sudo
+## Comando sudo
 Correspondente a SuperUser Do, sudo é um dos comandos básicos mais populares do Linux. Ele permite executar tarefas que exigem permissões administrativas ou de root.
 
 Ao usar o sudo, o sistema solicitará que os usuários se autentiquem com uma senha. Em seguida, o sistema Linux registrará um registro de data e hora como um rastreador. Por padrão, todo usuário root pode executar comandos sudo por 15 minutos/sessão.
@@ -200,7 +203,8 @@ Abaixo estão algumas opções que você pode adicionar:
 -n ou –lines imprime o primeiro número personalizado de linhas. Por exemplo, digite head -n 5 nomedoarquivo.txt para exibir as cinco primeiras linhas de nomedoarquivo.txt.
 -c ou –bytes imprime o primeiro número personalizado de bytes de cada arquivo.
 -q ou –quiet não imprimirá cabeçalhos que especifiquem o nome do arquivo.
-18. Comando tail
+
+## Comando tail
 O comando tail tem função similar ao comando head, mas mostrando as últimas 10 linhas de um arquivo de texto.
 
 Este é o formato geral:
@@ -211,7 +215,7 @@ Por exemplo, você deseja mostrar as últimas dez linhas do arquivo colors.txt:
 
 tail -n colors.txt
 
-19. Comando diff
+## Comando diff
 O comando diff (diferença) compara o conteúdo de dois arquivos linha por linha. Depois de analisar esses arquivos, ele vai mostrar as linhas que não são comuns entre eles.
 
 Os programadores frequentemente usam este comando quando precisam fazer pequenas alterações em programas. Assim, eles não precisam reescrever o código inteiro.
@@ -261,7 +265,8 @@ O comando chmod oferece suporte a várias opções, incluindo:
 -c ou –changes exibe informações quando uma alteração é feita.
 -f ou –silent suprime as mensagens de erro.
 -v ou –verbose exibe um diagnóstico para cada arquivo processado.
-22. Comando chown
+
+## Comando chown
 No Linux, todos os arquivos são de propriedade de um usuário específico. O comando chown permite alterar a propriedade de um arquivo, diretório ou link simbólico para um nome de usuário específico. 
 
 Este é o formato básico:
@@ -272,7 +277,7 @@ Por exemplo, você deseja tornar o linuxuser2 o proprietário do arquivo filenam
 
 chown linuxuser2 filename.txt
 
-23. Comando jobs
+## Comando jobs
 Um job é um processo que iniciado pelo shell. O comando jobs exibirá todos os processos em execução juntamente com seus status. Lembre-se de que esse comando só está disponível nos shells csh, bash, tcsh e ksh.
 
 Essa é a sintaxe básica:
@@ -286,7 +291,8 @@ Aqui estão algumas opções que você pode usar:
 -l lista as IDs de processo juntamente com suas informações.
 -n lista os processos cujos status foram alterados desde a última notificação.
 -p lista somente IDs de processos.
-24. Comando kill
+
+## Comando kill
 Se você tem um programa que não está respondendo bem, você pode finalizá-lo manualmente pelo comando kill. Ele vai mandar um certo sinal ao aplicativo com mau funcionamento e instruir que ele seja encerrado sozinho logo na sequência.
 
 Existe um total de 64 avisos que você pode usar, mas, geralmente, as pessoas usam apenas 2 deles:
@@ -299,7 +305,7 @@ Depois de saber qual aviso você quer usar e o PID do programa, use a sintaxe ab
 
 kill [signal option] PID.
 
-25. Comando ping
+## Comando ping
 O comando ping é um dos comandos básicos do Linux mais usados para verificar se uma rede ou um servidor está acessível. Além disso, ele é usado para solucionar vários problemas de conectividade.
 
 Este é o formato geral:
@@ -310,7 +316,7 @@ Por exemplo, você quer saber se pode se conectar ao Google e medir seu tempo de
 
 ping google.com
 
-26. Comando wget
+## Comando wget
 A linha de comando do Linux permite que você baixe arquivos da Internet usando o comando wget. Ele funciona em segundo plano, sem atrapalhar outros processos em execução.
 
 O comando wget baixa arquivos usando os protocolos HTTP, HTTPS e FTP. Ele pode executar downloads recursivos, que transferem partes de sites seguindo estruturas de diretórios e links, criando versões locais de páginas da web.
@@ -323,7 +329,7 @@ Por exemplo, digite o seguinte comando para baixar a versão mais recente do Wor
 
 wget https://wordpress.org/latest.zip
 
-27. Comando uname
+## Comando uname
 O comando uname, que significa Unix Name, vai mostrar informações detalhadas sobre seu sistema Linux. Isso inclui o nome da máquina, do sistema operacional, do kernel e assim por diante.
 
 uname [opção]
